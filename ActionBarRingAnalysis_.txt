@@ -1,0 +1,53 @@
+// Action Bar description file :RingAnalysis_
+run("Action Bar","/plugins/RingAnalysis/ActionBarRingAnalysis_.txt");
+exit;
+
+<line>
+<button> 1 line 1
+label=Start ROI manager
+icon=noicon
+arg=<macro>
+run("Start ROI manager");
+</macro>
+</line>
+<line>
+<button> 2 line 1
+label=Draw 60x60 ROI
+icon=noicon
+arg=<macro>
+run("Draw 60x60 ROI");
+</macro>
+</line>
+<line>
+<button> 3 line 1
+label=Save ROIs
+icon=noicon
+arg=<macro>
+run("Save ROI ");;
+</macro>
+</line>
+<line>
+<button> 4 line 1
+label=Batch ring analysis
+icon=noicon
+arg=<macro>
+run("Batch ring analysis");
+</macro>
+</line>
+<line>
+<button> 5 line 1
+label=Batch denoise&register
+icon=noicon
+arg=<macro>
+run("Batch denoise register");
+</macro>
+</line>
+<line>
+<button> 6 line 1
+label=Batch crop rings
+icon=noicon
+arg=<macro>
+run("Batch crop rings");
+</macro>
+</line>
+// end of file
