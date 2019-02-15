@@ -7,6 +7,7 @@ https://figshare.com/articles/Custom_toolbars_and_mini_applications_with_Action_
   update site: https://sites.imagej.net/BIG-EPFL/
 
 - Copy this directory "Ring_Analysis_IJ" to the Fiji plugins folder. 
+- Optional - even better - get GitHub Desktop to checkout this repository directly into the Fiji plugins folder that way it is really easy to update!
 
 - Open Fiji, start the plugin by running "Start Ring ActionBar"
 
