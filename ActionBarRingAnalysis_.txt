@@ -50,4 +50,28 @@ arg=<macro>
 run("Batch crop rings");
 </macro>
 </line>
+<line>
+<button> 7 line 1
+label=Remove last row
+icon=noicon
+arg=<macro>
+run("Remove last row");
+</macro>
+</line>
+<line>
+<button> 8 line 1
+label=Ridge Filter
+icon=noicon
+arg=<macro>
+run("Ridge Filter");
+</macro>
+</line>
+<line>
+<button> 9 line 1
+label=Batch measure kymotraces
+icon=noicon
+arg=<macro>
+run("Batch measure kymotraces");
+</macro>
+</line>
 // end of file
