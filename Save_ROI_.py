@@ -12,7 +12,8 @@ else:
     imp = IJ.getImage();
     imName = imp.title;
     imDir = IJ.getDirectory("image");#TODO: check if this returns "None"
-    roiName = imName.replace(".tif", ".roi.zip");
+    k = imName.rfind(".tif");
+    roiName = imName[:k] + ".roi.zip";
     rm.runCommand("save", os.path.join(imDir,roiName));
 
     #Delete ROI list
