@@ -74,4 +74,12 @@ arg=<macro>
 run("Batch measure kymotraces");
 </macro>
 </line>
+<line>
+<button> 10 line 1
+label=Batch denoise
+icon=noicon
+arg=<macro>
+run("Batch denoise");
+</macro>
+</line>
 // end of file
