@@ -45,6 +45,8 @@ def processFile(tifPath):
         unit = cal.unit;
         pix_w = cal.pixelWidth;
         pix_h = cal.pixelHeight;
+        timeUnit = cal.timeUnit;
+        frameInterval= cal.frameInterval;
 
 	IJ.run(imp,"PureDenoise ...", "parameters='3 4' estimation='Auto Individual' ");
 	imp2 = IJ.getImage();
@@ -59,6 +61,8 @@ def processFile(tifPath):
         cal = imp2.getCalibration();
         cal.unit = unit;
         cal.pixelWidth = pix_w;
+        cal.timeUnit = timeUnit;
+        cal.frameInterval=frameInterval;
         cal.pixelHeight = pix_h;
             
 	#save the new image

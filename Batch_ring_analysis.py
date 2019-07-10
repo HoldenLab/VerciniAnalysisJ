@@ -60,13 +60,37 @@ def preprocessRingFOV():
 
     #denoise and register the entire image
     imp = IJ.getImage();
+    #record the image size params and add them back to the denoised image
+    cal = imp.getCalibration();
+    unit = cal.unit;
+    pix_w = cal.pixelWidth;
+    pix_h = cal.pixelHeight;
+    timeUnit = cal.timeUnit;
+    frameInterval= cal.frameInterval;
+
+
     imName = imp.title;
     imDir = IJ.getDirectory("image");#TODO: check if this returns "None"
     IJ.run(imp,"PureDenoise ...", "parameters='3 4' estimation='Auto Individual' ");#TODO check gives same results as manual run!!
+
     imp2 = IJ.getImage();
     IJ.run(imp2,"StackReg", "transformation=[Rigid Body]");
     imName2 = imName.replace(".tif","") +"_denoise_reg.tif";
     imp2.title=imName2;
+    #fix the screwed up image dimensions introduced by puredenoise
+    # Swap Z and T dimensions if T=1
+    dims = imp2.getDimensions() # default order: XYCZT
+    if (dims[4] == 1):
+        imp2.setDimensions( dims[2],dims[4],dims[3] )
+    #add the units back to the new image
+    cal = imp2.getCalibration();
+    cal.unit = unit;
+    cal.pixelWidth = pix_w;
+    cal.pixelHeight = pix_h;
+    cal.timeUnit = timeUnit;
+    cal.frameInterval=frameInterval;
+
+    
     #save the new image
     imPath = os.path.join(imDir,imName2);
     IJ.saveAsTiff(imp2,imPath);
