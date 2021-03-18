@@ -13,8 +13,8 @@ To install the ImageJ Ring analysis plugin:
   update site: https://sites.imagej.net/BIG-EPFL/
 - Install FeatureJ from the update site https://sites.imagej.net/ImageScience
 - Install PureDenoise from here http://bigwww.epfl.ch/algorithms/denoise/PureDenoise_.jar 
-- Download VerciniAnalysisJ https://github.com/HoldenLab/VerciniAnalysisJ/archive/v1.1.1.zip and unzip.
-- Copy the directory "VerciniAnalysisJ" to the Fiji scripts/Plugins/ folder folder. 
+- Download the current VerciniAnalysisJ software https://github.com/HoldenLab/VerciniAnalysisJ/archive/v1.1.1.zip and unzip.
+- Copy the directory "VerciniAnalysisJ-X.X.X" to the Fiji scripts/Plugins/ folder folder and RENAME IT "VerciniAnalysisJ". 
 
 - Open Fiji, start the plugin by running Plugins > VerciniAnalysisJ > Start Vercini ActionBar"
 
