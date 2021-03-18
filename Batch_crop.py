@@ -5,7 +5,7 @@
 # Skips files without correspoinding .roi.zip
 # Warning: batch mode breaks if it encounters a bioformats file
 # updated to disable per ring registration, may be unreliable
-# 
+#  Batch crop image to rois in associated zip file
 
 from ij import IJ;
 from ij.plugin.frame import RoiManager
@@ -56,12 +56,11 @@ def cropAllRings():
         return impRoi;
     
 
-    #denoise and register the entire image
     imp = IJ.getImage();
     imName = imp.title;
     imDir = IJ.getDirectory("image");#TODO: check if this returns "None"
 
-    # take the rois, crop, register and save
+    # take the rois, crop and save
     #make an analysis directory
     analysisDir = os.path.join(imDir,"Indiv_rings")
     if not os.path.exists(analysisDir):

@@ -5,7 +5,7 @@
 # Skips Indiv_rings directories (how to say this on the plugin?)
 # Skips files without correspoinding .roi.zip
 # Warning: batch mode breaks if it encounters a bioformats file
-#updated to disable per ring registration, may be unreliable
+# Batch denoise and register entire image, then crop all associated sub image rois in zip file
 
 from ij import IJ;
 from ij.plugin.frame import RoiManager
@@ -71,7 +71,7 @@ def preprocessRingFOV():
 
     imName = imp.title;
     imDir = IJ.getDirectory("image");#TODO: check if this returns "None"
-    IJ.run(imp,"PureDenoise ...", "parameters='3 4' estimation='Auto Individual' ");#TODO check gives same results as manual run!!
+    IJ.run(imp,"PureDenoise ...", "parameters='3 4' estimation='Auto Individual' ");
 
     imp2 = IJ.getImage();
     IJ.run(imp2,"StackReg", "transformation=[Rigid Body]");

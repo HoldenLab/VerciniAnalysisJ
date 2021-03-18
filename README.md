@@ -11,13 +11,18 @@ To install the ImageJ Ring analysis plugin:
 - Install the ActionBar plugin via its update site https://sites.imagej.net/Mutterer/
 - Install StackReg and TurboReg if they are not already installed, via their
   update site: https://sites.imagej.net/BIG-EPFL/
+- Install FeatureJ from the update site https://sites.imagej.net/ImageScience
+- Install PureDenoise from here http://bigwww.epfl.ch/algorithms/denoise/PureDenoise_.jar 
 - Download the current VerciniAnalysisJ release and unzip.
-- Copy the directory "VerciniAnalysisJ" to the Fiji plugins folder. 
+- Copy the directory "VerciniAnalysisJ" to the Fiji scripts/Plugins/ folder folder. 
 
 - Open Fiji, start the plugin by running Plugins > VerciniAnalysisJ > Start Vercini ActionBar"
 
 
 USAGE INSTRUCTIONS
+
+Some short test VerCINI data (raw data, and kymographs) is provided to check the plugins work as expected https://github.com/HoldenLab/VerciniAnalysisJ/tree/master/testing
+
 
 LICENSING INFORMATION All files are distributed under the GPLv3 and (c) 2020 Seamus Holden, Newcastle University unless otherwise stated. See LICENSE.txt for full terms.
 

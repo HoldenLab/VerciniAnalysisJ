@@ -2,7 +2,7 @@
 #@ Float (label="Frame interval (s)",description="frTime") FRTIME
 
 
-macro "Batch Measure Kymo Traces 65nm" {
+macro "Batch Kymo Trace Statistics" {
 	//Select directory for analysis (images can be in subfolders)
 	maindir = getDirectory("Choose the root Directory ");
 	maindirName = File.getName(maindir);

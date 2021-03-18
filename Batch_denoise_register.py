@@ -4,6 +4,7 @@
 #@ boolean (label = "Skip *denoise_reg.tif", value = true, persist=true) ignoreDenoised
 #@ boolean (label = "Skip 'exclude' subdirs", value = true, persist=true) ignoreExcludeDir
 # Warning: batch mode breaks if it encounters a bioformats file
+# Batch denoise and register images
 
 from ij import IJ;
 import os

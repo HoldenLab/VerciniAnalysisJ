@@ -4,6 +4,7 @@
 #@ boolean (label = "Skip *denoise.tif", value = true, persist=true) ignoreDenoised
 #@ boolean (label = "Skip 'exclude' subdirs", value = true, persist=true) ignoreExcludeDir
 # Warning: batch mode breaks if it encounters a bioformats file
+# Batch denoise images
 
 from ij import IJ;
 import os
@@ -38,7 +39,7 @@ def processFile(tifPath):
 	
 	#denoise and register the entire image
 	imp = IJ.getImage();
-	imName = imp.titlc;
+	imName = imp.title;
 	imDir = IJ.getDirectory("image");#TODO: check if this returns "None"
         #record the image size params and add them back to the denoised image
         #because puredenoise currently strips all this info out of the denoised image
