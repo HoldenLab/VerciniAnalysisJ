@@ -8,9 +8,7 @@ OVERVIEW
 INSTALLATION
 
 To install the ImageJ Ring analysis plugin:
-
-- Install the ActionBar plugin to the fiji plugins directory from here:
-https://figshare.com/articles/Custom_toolbars_and_mini_applications_with_Action_Bar/3397603/3
+- Install the ActionBar plugin via its update site https://sites.imagej.net/Mutterer/
 - Install StackReg and TurboReg if they are not already installed, via their
   update site: https://sites.imagej.net/BIG-EPFL/
 - Download the current VerciniAnalysisJ release and unzip.

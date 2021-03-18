@@ -1,5 +1,5 @@
 // Action Bar description file :RingAnalysis_
-run("Action Bar","/plugins/RingAnalysis/ActionBarRingAnalysis_.txt");
+run("Action Bar","/scripts/Plugins/VerciniAnalysisJ/ActionBarVerciniAnalysisJ_.txt");
 exit;
 
 <line>

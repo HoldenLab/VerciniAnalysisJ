@@ -4,7 +4,8 @@
 # Skips Indiv_rings directories (how to say this on the plugin?)
 # Skips files without correspoinding .roi.zip
 # Warning: batch mode breaks if it encounters a bioformats file
-#updated to disable per ring registration, may be unreliable
+# updated to disable per ring registration, may be unreliable
+# 
 
 from ij import IJ;
 from ij.plugin.frame import RoiManager

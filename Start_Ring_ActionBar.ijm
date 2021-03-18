@@ -1,1 +1,1 @@
-run("Action Bar","/plugins/Ring_Analysis_IJ/ActionBarRingAnalysis_.txt")
+run("Action Bar","/scripts/Plugins/VerciniAnalysisJ/ActionBarRingAnalysis_.txt")

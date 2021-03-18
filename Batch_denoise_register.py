@@ -41,6 +41,7 @@ def processFile(tifPath):
 	imName = imp.title;
 	imDir = IJ.getDirectory("image");#TODO: check if this returns "None"
         #record the image size params and add them back to the denoised image
+        #because puredenoise currently strips all this info out of the denoised image
         cal = imp.getCalibration();
         unit = cal.unit;
         pix_w = cal.pixelWidth;
