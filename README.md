@@ -24,7 +24,9 @@ USAGE INSTRUCTIONS
 Some short test VerCINI data (raw data, and kymographs) is provided to check the plugins work as expected https://github.com/HoldenLab/VerciniAnalysisJ/tree/master/testing
 
 
-LICENSING INFORMATION All files are distributed under the GPLv3 and (c) 2020 Seamus Holden, Newcastle University unless otherwise stated. See LICENSE.txt for full terms.
+LICENSING INFORMATION
+
+All files are distributed under the GPLv3 and (c) 2020 Seamus Holden, Newcastle University unless otherwise stated. See LICENSE.txt for full terms.
 
 CITATION
 
