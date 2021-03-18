@@ -28,7 +28,7 @@ run("Save ROI ");;
 </line>
 <line>
 <button> 4 line 1
-label=Batch denoise,register,crop
+label=Batch denoise+register+crop
 icon=noicon
 arg=<macro>
 run("Batch denoise register crop");
@@ -36,7 +36,7 @@ run("Batch denoise register crop");
 </line>
 <line>
 <button> 5 line 1
-label=Batch denoise&register
+label=Batch denoise+register
 icon=noicon
 arg=<macro>
 run("Batch denoise register");
