@@ -32,7 +32,7 @@ macro "Batch Kymo Trace Statistics" {
 		print(f, "\\Clear");
 	else
 	run("New... ", "name=" + title2 + " type=Table");
-	Headings = "\\Headings:n\tROI#\tImage&ROI_Name\tPoint#\tLength (nm)\tTime (s)\tSpeed (nm/s)\tThetaDeg\tThetaRad\tCategory";
+	Headings = "\\Headings:n\tROI#\tImage&ROI_Name\tDisplacement (nm)\tTime (s)\tVelocity (nm/s)\tThetaDeg\tThetaRad";
 	print(f, Headings);
 	roiNumber = 0;
 	resultsLine = 0;
@@ -135,7 +135,7 @@ macro "Batch Kymo Trace Statistics" {
 				for (k = 0; k < 1; k++) {
 					resultsLine++;
 					// Build the Results table line
-					ResultsLine = d2s(resultsLine, 0) + "\t" + roiNumber + "\t" + ROIname + "\t" +  "Global" + "\t" + dxS[k] + "\t" + dyS[k] + "\t" + V[k] + "\t" + ThetaDeg[k] + "\t" + ThetaRad[k] + "\t" + Cat[k];
+					ResultsLine = d2s(resultsLine, 0) + "\t" + roiNumber + "\t" + ROIname + "\t" + dxS[k] + "\t" + dyS[k] + "\t" + V[k] + "\t" + ThetaDeg[k] + "\t" + ThetaRad[k] ;
 					print(f, ResultsLine);
 				}
 			}
