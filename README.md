@@ -24,9 +24,9 @@ USAGE INSTRUCTIONS
 
 Open Fiji, start the plugin by running Plugins > VerciniAnalysisJ > Start Vercini ActionBar. Denoising may take >30 min for large datasets. Registration may take 5-15 min, also depending on the size of the dataset. All other operations should finish within 1 min.
 
+DEMO
 
-
-Some short test VerCINI data (raw data, and kymographs) is provided to check the plugins work as expected https://github.com/HoldenLab/VerciniAnalysisJ/tree/master/testing
+Some short test VerCINI data (videos and kymographs) are provided to check the plugins work as expected https://github.com/HoldenLab/VerciniAnalysisJ/tree/master/testing
 
 
 LICENSING INFORMATION
