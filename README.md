@@ -22,7 +22,7 @@ This should install the plugin and all dependencies within ~1 min.
 
 USAGE INSTRUCTIONS
 
-Open Fiji, start the plugin by running Plugins > VerciniAnalysisJ > Start Vercini ActionBar. Denoising may take >30 min, depending on the size of the data set. Registration may take 5-15 min, also depending on the size of the data set. All other functions should finish within 1 min.
+Open Fiji, start the plugin by running Plugins > VerciniAnalysisJ > Start Vercini ActionBar. Denoising may take >30 min for large datasets. Registration may take 5-15 min, also depending on the size of the dataset. All other operations should finish within 1 min.
 
 
 
