@@ -5,15 +5,26 @@ This software is provided as is and without warranty.
 
 OVERVIEW
 
+SYSTEM REQUIREMENTS
+
+This package does not require any special hardware. However, for large datasets a large amount of RAM will be required for denoising. We recommmend >16 GB of RAM for optimal performance.
+
+This package development system has been tested on Windows 10, but should be compatible with other operating systems.
+
+The only software required is FIJI.
+
 INSTALLATION
 
 Install the VerciniAnalysisJ plugin in FIJI by 
 - Clicking Help > Update > Manage Update Sites > VerciniAnalysisJ. 
 - Close "Manage Update Sites" dialog and click "Apply changes"
-This should install the plugin and all dependencies.
+This should install the plugin and all dependencies within ~1 min.
 
 USAGE INSTRUCTIONS
-Open Fiji, start the plugin by running Plugins > VerciniAnalysisJ > Start Vercini ActionBar
+
+Open Fiji, start the plugin by running Plugins > VerciniAnalysisJ > Start Vercini ActionBar. Denoising may take >30 min, depending on the size of the data set. Registration may take 5-15 min, also depending on the size of the data set. All other functions should finish within 1 min.
+
+
 
 Some short test VerCINI data (raw data, and kymographs) is provided to check the plugins work as expected https://github.com/HoldenLab/VerciniAnalysisJ/tree/master/testing
 
