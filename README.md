@@ -28,6 +28,23 @@ DEMO
 
 Some short test VerCINI data (videos and kymographs) are provided to check the plugins work as expected https://github.com/HoldenLab/VerciniAnalysisJ/tree/master/testing
 
+To test-analyse the videos provided, one option is:
+- Open VerciniAnalysisJ ActionBar.
+- Draw a 60x60 ROI around the ring in the video and save to ImageJ ROI manager by pressing 't'.
+- Save ROIs.
+- Use Batch denoise+register+crop. Navigate to the directory containing both the video and compressed ROI file.
+
+The output will be denoised and registered version of the original video (file_denoise_reg.tif), and a directory Indiv_rings containing the cropped ring (file_denoise_reg_ring1.tif).
+
+To test-analyse the kymographs provided, one option is:
+- Open VerciniAnalysisJ ActionBar.
+- Use Ridge filter with a smoothing scale of 2 pix.
+- Use the straight line tool in ImageJ to trace lines, pressing 't' to add them to ROI manager.
+- Save the ROIs using the ROI manager window by going to More>Save... and saving them in the same directory as the kymograph with the same file name (e.g. if the kymograph is 180327_mNG-ftsz1_kymoWrap.tif, save the ROI file as 180327_mNG-ftsz1_kymoWrap.zip).
+- In VerciniAnalysisJ ActionBar, use Batch kymotrace statistics. Nativate to the directory containing both the video and compressed ROI file.
+
+The output will be a csv file containing the track numbers with lengths, times, speeds, and angles.
+
 
 LICENSING INFORMATION
 
