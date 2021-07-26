@@ -34,7 +34,7 @@ To test-analyse the videos provided, one option is:
 - Save ROIs.
 - Use Batch denoise+register+crop. Navigate to the directory containing both the video and compressed ROI file.
 
-The output will be denoised and registered version of the original video (file_denoise_reg.tif), and a directory Indiv_rings containing the cropped ring (file_denoise_reg_ring1.tif).
+The output will be denoised and registered version of the original video (file_denoise_reg.tif), and a directory Indiv_rings containing the cropped ring (file_denoise_reg_ring1.tif). The denoise+register+crop operation should take a couple of seconds on a standard computer.
 
 To test-analyse the kymographs provided, one option is:
 - Open VerciniAnalysisJ ActionBar.
@@ -43,7 +43,7 @@ To test-analyse the kymographs provided, one option is:
 - Save the ROIs using the ROI manager window by going to More>Save... and saving them in the same directory as the kymograph with the same file name (e.g. if the kymograph is 180327_mNG-ftsz1_kymoWrap.tif, save the ROI file as 180327_mNG-ftsz1_kymoWrap.zip).
 - In VerciniAnalysisJ ActionBar, use Batch kymotrace statistics. Nativate to the directory containing both the video and compressed ROI file.
 
-The output will be a csv file containing the track numbers with lengths, times, speeds, and angles.
+The output will be a csv file containing the track numbers with lengths, times, speeds, and angles. Each operation should take a couple of seconds on a standard computer.
 
 
 LICENSING INFORMATION
