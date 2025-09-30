@@ -74,7 +74,7 @@ def preprocessRingFOV():
     IJ.run(imp,"PureDenoise ...", "parameters='3 4' estimation='Auto Individual' ");
 
     imp2 = IJ.getImage();
-    IJ.run(imp2,"StackReg", "transformation=[Rigid Body]");
+    IJ.run(imp2,"StackReg ", "transformation=[Rigid Body]");
     imName2 = imName.replace(".tif","") +"_denoise_reg.tif";
     imp2.title=imName2;
     #fix the screwed up image dimensions introduced by puredenoise
