@@ -7,3 +7,9 @@
 *.png
 *.mat
 *.exe
+testing/*
+!testing/20190521_Z_FtsZ_GFP_test_image.tif
+!testing/20190521_Z_FtsZ_GFP_test_image.roi.zip
+!testing/Test_Kymographs/180327_mNG-ftsz1_kymoWrap.tif
+!testing/Test_Kymographs/180327_mNG-ftsz2_kymoWrap.tif
+!testing/Test_Kymographs/180327_mNG-ftsz3_kymoWrap.tif
