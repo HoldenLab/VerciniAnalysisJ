@@ -3,9 +3,7 @@
 INFORMATION This is a set of ImageJ scripts for analysis of VerCINI (Vertical Cell Imaging by Nanostructured Immobilization) data First published in Whitley et al, bioRxiv 2020. 
 This software is provided as is and without warranty.
 
-OVERVIEW
-
-SYSTEM REQUIREMENTS
+## SYSTEM REQUIREMENTS
 
 This package does not require any special hardware. However, for large datasets a large amount of RAM will be required for denoising. We recommmend >16 GB of RAM for optimal performance.
 
@@ -13,35 +11,38 @@ This package development system has been tested on Windows 10, but should be com
 
 The only software required is FIJI.
 
-INSTALLATION
+## INSTALLATION
 
-_Installation via FIJI update site (recommmended)_
+### Installation via FIJI update site (recommmended)
 Install the VerciniAnalysisJ plugin in FIJI by 
 - Clicking Help > Update > Manage Update Sites > VerciniAnalysisJ. 
 - Close "Manage Update Sites" dialog and click "Apply changes"
 This should install the plugin and all dependencies within ~1 min.
 
-_Manual installation_
+### Manual installation
 Install StackReg by activating the BIG_EPFL update site
 - Clicking Help > Update > Manage Update Sites > BIG_EPFL. 
 - Close "Manage Update Sites" dialog and click "Apply changes"
+
 Install ActionBar plugin
 - Download ActionBar plugin from figshare by [this link](https://figshare.com/articles/dataset/Custom_toolbars_and_mini_applications_with_Action_Bar/3397603)
 - Extract the ZIP file and copy "action_bar.jar" to the FIJI plugins directory _Fiji\plugins_
+
 Install VerciniAnalysisJ
 - Download the latest release from the [VerciniAnalysisJ GitHub](https://github.com/HoldenLab/VerciniAnalysisJ/releases)
 - Extract the ZIP file and copy the entire VerciniAnalysisJ folder to _Fiji\scripts\Plugins_
+
 Manually install FeatureJ (which has recently been removed from core FIJI distro)
 - Download [FeatureJ.jar](https://imagescience.org/meijering/software/download/FeatureJ_.jar) and copy it to _Fiji\plugins_
 - Activate the ImageScience update site: Clicking Help > Update > Manage Update Sites > ImageScience
 
-USAGE INSTRUCTIONS
+## USAGE INSTRUCTIONS
 
 Open Fiji, start the plugin by running Plugins > VerciniAnalysisJ > Start Vercini ActionBar. Denoising may take >30 min for large datasets. Registration may take 5-15 min, also depending on the size of the dataset. All other operations should finish within 1 min.
 
 Note that to automatically crop out ROIs into smaller images, the software expects the ROI file to match the corresponding image. Ie for "test_image.tif" the ROI file should be called "test_image.roi.zip". This is done automatically by the VerCINI ActionBar but if you are saving the files yourself you also need to follow this convention.
 
-DEMO
+## DEMO
 
 Some short test VerCINI data (videos and kymographs) are provided to check the plugins work as expected https://github.com/HoldenLab/VerciniAnalysisJ/tree/master/testing
 
@@ -63,11 +64,11 @@ To test-analyse the kymographs provided, one option is:
 The output will be a csv file containing the track numbers with lengths, times, speeds, and angles. Each operation should take a couple of seconds on a standard computer.
 
 
-LICENSING INFORMATION
+## LICENSING INFORMATION
 
 All files are distributed under the GPLv3 and (c) 2020 Seamus Holden, Newcastle University unless otherwise stated. See LICENSE.txt for full terms.
 
-CITATION
+## CITATION
 
 If you use this software in work leading to a scientifc publication, please cite: 
 
