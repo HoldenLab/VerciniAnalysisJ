@@ -31,7 +31,9 @@ Install ActionBar plugin
 Install VerciniAnalysisJ
 - Download the latest release from the [VerciniAnalysisJ GitHub](https://github.com/HoldenLab/VerciniAnalysisJ/releases)
 - Extract the ZIP file and copy the entire VerciniAnalysisJ folder to _Fiji\scripts\Plugins_
-
+Manually install FeatureJ (which has recently been removed from core FIJI distro)
+- Download [FeatureJ.jar](https://imagescience.org/meijering/software/download/FeatureJ_.jar) and copy it to _Fiji\plugins_
+- Activate the ImageScience update site: Clicking Help > Update > Manage Update Sites > ImageScience
 
 USAGE INSTRUCTIONS
 
