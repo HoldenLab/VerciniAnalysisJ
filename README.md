@@ -15,9 +15,12 @@ The only software required is FIJI.
 
 ### Installation via FIJI update site (recommmended)
 Install the VerciniAnalysisJ plugin in FIJI by 
-- Clicking Help > Update > Manage Update Sites > VerciniAnalysisJ. 
+- Clicking Help > Update > Manage Update Sites
+- Add both "VerciniAnalysisJ" and "BIG-EPFL" update sites
 - Close "Manage Update Sites" dialog and click "Apply changes"
-This should install the plugin and all dependencies within ~1 min.
+  This should install the plugin and all dependencies.
+- Restart ImageJ
+
 
 ### Manual installation
 Install StackReg by activating the BIG_EPFL update site
