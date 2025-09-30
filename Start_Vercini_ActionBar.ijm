@@ -59,6 +59,14 @@ run("Batch crop");
 </line>
 <line>
 <button> 8 line 1
+label=Batch register+crop
+icon=noicon
+arg=<macro>
+run("Batch register crop");
+</macro>
+</line>
+<line>
+<button> 9 line 1
 label=Remove last row
 icon=noicon
 arg=<macro>
@@ -66,7 +74,7 @@ run("Remove last row");
 </macro>
 </line>
 <line>
-<button> 9 line 1
+<button> 10 line 1
 label=Ridge Filter
 icon=noicon
 arg=<macro>
@@ -74,7 +82,7 @@ run("Ridge Filter");
 </macro>
 </line>
 <line>
-<button> 10 line 1
+<button> 11 line 1
 label=Batch kymotrace statistics
 icon=noicon
 arg=<macro>
