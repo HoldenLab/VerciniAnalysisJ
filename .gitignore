@@ -7,6 +7,3 @@
 *.png
 *.mat
 *.exe
-testing/*
-!testing/test.tif
-!testing/test.roi.zip
