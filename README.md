@@ -15,14 +15,29 @@ The only software required is FIJI.
 
 INSTALLATION
 
+_Installation via FIJI update site (recommmended)_
 Install the VerciniAnalysisJ plugin in FIJI by 
 - Clicking Help > Update > Manage Update Sites > VerciniAnalysisJ. 
 - Close "Manage Update Sites" dialog and click "Apply changes"
 This should install the plugin and all dependencies within ~1 min.
 
+_Manual installation_
+Install StackReg by activating the BIG_EPFL update site
+- Clicking Help > Update > Manage Update Sites > BIG_EPFL. 
+- Close "Manage Update Sites" dialog and click "Apply changes"
+Install ActionBar plugin
+- Download ActionBar plugin from figshare by [this link](https://figshare.com/articles/dataset/Custom_toolbars_and_mini_applications_with_Action_Bar/3397603)
+- Extract the ZIP file and copy "action_bar.jar" to the FIJI plugins directory _Fiji\plugins_
+Install VerciniAnalysisJ
+- Download the latest release from the [VerciniAnalysisJ GitHub](https://github.com/HoldenLab/VerciniAnalysisJ/releases)
+- Extract the ZIP file and copy the entire VerciniAnalysisJ folder to _Fiji\scripts\Plugins_
+
+
 USAGE INSTRUCTIONS
 
 Open Fiji, start the plugin by running Plugins > VerciniAnalysisJ > Start Vercini ActionBar. Denoising may take >30 min for large datasets. Registration may take 5-15 min, also depending on the size of the dataset. All other operations should finish within 1 min.
+
+Note that to automatically crop out ROIs into smaller images, the software expects the ROI file to match the corresponding image. Ie for "test_image.tif" the ROI file should be called "test_image.roi.zip". This is done automatically by the VerCINI ActionBar but if you are saving the files yourself you also need to follow this convention.
 
 DEMO
 
@@ -31,7 +46,7 @@ Some short test VerCINI data (videos and kymographs) are provided to check the p
 To test-analyse the videos provided, one option is:
 - Open VerciniAnalysisJ ActionBar.
 - Draw a 60x60 ROI around the ring in the video and save to ImageJ ROI manager by pressing 't'.
-- Save ROIs.
+- Save ROIs via the ActionBar.
 - Use Batch denoise+register+crop. Navigate to the directory containing both the video and compressed ROI file.
 
 The output will be denoised and registered version of the original video (file_denoise_reg.tif), and a directory Indiv_rings containing the cropped ring (file_denoise_reg_ring1.tif). The denoise+register+crop operation should take a couple of seconds on a standard computer.
