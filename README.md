@@ -14,28 +14,29 @@ The only software required is FIJI.
 ## INSTALLATION
 
 ### Installation via FIJI update site (recommmended)
-Install the VerciniAnalysisJ plugin in FIJI by 
-- Clicking Help > Update > Manage Update Sites
-- Add both "VerciniAnalysisJ" and "BIG-EPFL" update sites
+#### Install the VerciniAnalysisJ plugin in FIJI
+- Click Help > Update > Manage Update Sites
+- Add the "VerciniAnalysisJ", "BIG-EPFL" and "ImageScience" update sites
 - Close "Manage Update Sites" dialog and click "Apply changes"
   This should install the plugin and all dependencies.
 - Restart ImageJ
 
 
 ### Manual installation
-Install StackReg by activating the BIG_EPFL update site
-- Clicking Help > Update > Manage Update Sites > BIG_EPFL. 
+#### Install required dependencies
+- Click Help > Update > Manage Update Sites
+- Add the "VerciniAnalysisJ", "BIG-EPFL" and "ImageScience" update sites
 - Close "Manage Update Sites" dialog and click "Apply changes"
 
-Install ActionBar plugin
+#### Install ActionBar plugin
 - Download ActionBar plugin from figshare by [this link](https://figshare.com/articles/dataset/Custom_toolbars_and_mini_applications_with_Action_Bar/3397603)
 - Extract the ZIP file and copy "action_bar.jar" to the FIJI plugins directory _Fiji\plugins_
 
-Install VerciniAnalysisJ
+#### Install VerciniAnalysisJ
 - Download the latest release from the [VerciniAnalysisJ GitHub](https://github.com/HoldenLab/VerciniAnalysisJ/releases)
 - Extract the ZIP file and copy the entire VerciniAnalysisJ folder to _Fiji\scripts\Plugins_
 
-Manually install FeatureJ (which has recently been removed from core FIJI distro)
+#### Manually install FeatureJ (which has recently been removed from core FIJI distro)
 - Download [FeatureJ.jar](https://imagescience.org/meijering/software/download/FeatureJ_.jar) and copy it to _Fiji\plugins_
 - Activate the ImageScience update site: Clicking Help > Update > Manage Update Sites > ImageScience
 
